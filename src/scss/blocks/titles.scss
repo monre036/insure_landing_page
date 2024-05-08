@@ -1,1 +1,55 @@
+@use '../mixins/responsive.scss' as *;
 
+.title {
+  font-family: 'DM Serif Display', serif;
+  margin: 0;
+  color: var(--neutral-color);
+
+  &--xl {
+    font-size: 3rem;
+    line-height: 48px;
+    letter-spacing: -0.67px;
+
+    @include responsive(laptop) {
+      width: 540px;
+    }
+  }
+
+  &--white {
+    color: var(--text-color-light);
+    margin-bottom: 1rem;
+  }
+
+  &--black {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &--l {
+    font-size: 2.5rem;
+    line-height: 40px;
+    letter-spacing: -0.56px;
+
+    @include responsive(laptop) {
+      width: 475px;
+      font-size: 3.5rem;
+      line-height: 56px;
+      letter-spacing: -0.78px;
+    }
+  }
+
+  &--m {
+    font-size: 1.75rem;
+    letter-spacing: -0.39px;
+    margin-bottom: 16px;
+  }
+
+  &--s {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 1.5px;
+    color: var(--text-color);
+    margin-bottom: 36px;
+  }
+}

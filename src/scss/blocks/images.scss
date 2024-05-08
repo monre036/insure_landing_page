@@ -1,0 +1,15 @@
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+
+.icon__feature {
+  margin-bottom: 32px;
+}
+
+.image__header {
+  @include responsive(laptop) {
+    position: absolute;
+    top: 185px;
+    left: 735px;
+    z-index: 2;
+  }
+}

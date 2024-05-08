@@ -1,0 +1,32 @@
+@use '../mixins/hover.scss' as *;
+
+.button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1.5px;
+  color: white;
+  padding: 13px 28.5px 12px;
+  border: 1.5px solid white;
+
+  @include hover {
+    background-color: white;
+    color: #2c2830;
+  }
+}
+
+.link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
+
+  @include hover {
+    text-decoration: underline;
+  }
+}
